@@ -1,0 +1,98 @@
+{
+  "release": "1.0.1",
+  "built_utc": "2026-09-20",
+  "native_compiler": "Zig 0.16.0 x86_64-windows-gnu",
+  "native_sha256": "84e2579e76745b4f3da2917f6b86548d8197cd73ee1bba0bab005b725fa817a3",
+  "native_size": 205312,
+  "native_rebuild": "Identical except PE timestamp and .buildid metadata, which vary with output location. All code/data/import/unwind/relocation sections match.",
+  "native_normalized_sha256": "1c8f308f0c3d7c8695f9402b10da2460232cbdde8be79a52c19499d3fca6a65f",
+  "local_environment": "Linux; PowerShell 7.4.13; Lupa Lua; Zig 0.16.0",
+  "checks": {
+    "compatibility": [
+      "PASS: synthetic PE VERIFIED | salary=00001000 | death=000011f0 | success=000012b0 | completion=00001830",
+      "PASS: mapped image VERIFIED | salary=00001000 | death=000011f0 | success=000012b0 | completion=00001830",
+      "PASS: all function locations moved VERIFIED | salary=00001280 | death=00001470 | success=00001530 | completion=00001ab0",
+      "PASS: ambiguous salary salary: expected one verified function, found 2; protection unavailable",
+      "PASS: body mutation salary salary: expected one verified function, found 0; protection unavailable",
+      "PASS: relocated references salary VERIFIED | salary=00001000 | death=000011f0 | success=000012b0 | completion=00001830",
+      "PASS: ambiguous death death: expected one verified function, found 2; protection unavailable",
+      "PASS: body mutation death death: expected one verified function, found 0; protection unavailable",
+      "PASS: relocated references death VERIFIED | salary=00001000 | death=000011f0 | success=000012b0 | completion=00001830",
+      "PASS: ambiguous params params: expected one verified function, found 2; protection unavailable",
+      "PASS: body mutation params params: expected one verified function, found 0; protection unavailable",
+      "PASS: relocated references params VERIFIED | salary=00001000 | death=000011f0 | success=000012b0 | completion=00001830",
+      "PASS: ambiguous complete complete: expected one verified function, found 2; protection unavailable",
+      "PASS: body mutation complete complete: expected one verified function, found 0; protection unavailable",
+      "PASS: relocated references complete VERIFIED | salary=00001000 | death=000011f0 | success=000012b0 | completion=00001830",
+      "PASS: non-executable matches rejected salary: expected one verified function, found 0; protection unavailable",
+      "PASS: corrupt PE bounds invalid PE",
+      "PASS: truncated PE invalid PE",
+      "PASS: invalid exception table invalid PE",
+      "PASS: actual game_old VERIFIED | salary=04f7cc50 | death=04f7e850 | success=04f636c0 | completion=04f63eb0",
+      "PASS: actual ASLR-mapped game_old VERIFIED | salary=04f7cc50 | death=04f7e850 | success=04f636c0 | completion=04f63eb0",
+      "PASS: actual game_current VERIFIED | salary=04f7cc50 | death=04f7e850 | success=04f636c0 | completion=04f63eb0",
+      "PASS: actual ASLR-mapped game_current VERIFIED | salary=04f7cc50 | death=04f7e850 | success=04f636c0 | completion=04f63eb0",
+      "PASS: 23 compatibility checks; same C reader used by installer and runtime"
+    ],
+    "installer": [
+      "PASS: 16 installer scenarios, including reruns and rollback."
+    ],
+    "release": [
+      "PASS: actual release payload; fresh runtime; RoboCop reinstall with matching runtime retained; outdated runtime and loader updated; settings, other mod and load list preserved."
+    ],
+    "discovery": [
+      "PASS: Steam libraries, manifests, missing manifests, flat/nested game layouts, selected EXE/launcher/folder/deep mod folder, quoted and expanded paths, missing Paks diagnosis, trace logging, no console prompt, syntax."
+    ],
+    "runtime": [
+      "PASS: latest basic experimental selection; automatic download; extraction whitelist; bundled reuse; bad-hash rejection; nonofficial URL rejection; explicit offline fallback."
+    ],
+    "lifecycle": [
+      "PASS: full Lua lifecycle, identity/stats, unrelated worker, 30 seconds, load transition, compatibility failure pause and alert",
+      "PASS: missing native DLL requests a pause without asserting protection"
+    ],
+    "patrol": [
+      "PASS: 30-second boundary, paused clock, mixed party, unrelated patrol unchanged, no repeated completion"
+    ]
+  },
+  "native_gameplay_rule_test": "PASS: $100 wage; 100 blocked RoboCop deaths; other officer unchanged; 1000% parameters and completion; unrelated mission unchanged",
+  "windows_dll_exports": [
+    "robocop_alert",
+    "robocop_check_file",
+    "robocop_init",
+    "robocop_refresh"
+  ],
+  "production_code_comments": "mod title and author only",
+  "not_run": [
+    "Windows PowerShell 5.1 execution and P/Invoke bridge",
+    "Windows live detour installation and thread suspension",
+    "In-game patrol, game-pause, save/reload and portrait validation",
+    "GitHub Actions workflow"
+  ],
+  "source_sha256": {
+    "Install_RoboCop.bat": "967986f9fd27817f303b2187b57fe05ea5669e3c6d229aabbcd492542fd2cb74",
+    "Installer/Compatibility.ps1": "dde4744f2f5f75a1621710b12cebbe13f187a5e1bb6ecd5a340e00366170967c",
+    "Installer/Core.ps1": "ee91ff0c3fa92df4ed1e4fdaa1e0f592d07216ec9a72f0b1989779cc3b554a44",
+    "Installer/Discovery.ps1": "666497dca1c39655e5c796be8172e7e24535f54c891d805b273fda718718fa4f",
+    "Installer/Install.ps1": "9924e08bbf0244480dd17b6d03c87472bde24b2ad680ba1221d72496fab5b8b8",
+    "Installer/Runtime.ps1": "d3414de7bbd7502be76d3bfc5babf0c3e98a694ade34431f9c519f9dfe8b648e",
+    "Payload/RoboCopGameplay/Scripts/main.lua": "65d14f88926d3a201dd51496a11997a1d9b8e0eadc1215c8bf0b1b2de29a2bf6",
+    "Source/Native/build_manifest.h": "636016f57f9a2c6e8b6541a496c9f68aee3e7b3f92118b38d8ccf459d10427ed",
+    "Source/Native/build_native.bat": "6bd703b47fbf2163abab96b55d7d5b0e794f122695ec75bccc8ceb637f5fc49f",
+    "Source/Native/compatibility.h": "28fd17bb16502bb44260a51c5fe9cec1adb4d11ecc66075d2844911f97a59047",
+    "Source/Native/gameplay.h": "e7c707a8c4615891dc19fc84fe44eac7905a7bcb77ec8da7a6ada89198adc058",
+    "Source/Native/profiles.h": "fe0c18acda46e1891f9b8919fd2c146ba1d298539caa9e48d890655a62f0f6eb",
+    "Source/Native/robocop.c": "e6a130261faa34dbb77c64abe620b97b34d409fb78bc51dd076dfa6214ff9e9b",
+    "Source/Tests/test_bridge.ps1": "ae5d92cc469e255ea39c10cf3edd1164a579df51ac19d3eea6ac58ad29127e17",
+    "Source/Tests/test_compatibility.py": "6629b1cf8c04c26aafc0908afbdf00a267d663a91e572d96a3b2742588af471a",
+    "Source/Tests/test_discovery.ps1": "6c46b3f1eaaf8f7b8b7536cdbdfc37732da0931f325313bc1b068c45eff7f0a5",
+    "Source/Tests/test_gameplay.c": "c480e00cebaaf88e49136eb8043b3f041c39d7534778e9bfbb6b30f5fd6f4b8f",
+    "Source/Tests/test_installer.ps1": "374073440a642b9290baa1caa8fcf05fe3ab0131999314cae6b892a753a322eb",
+    "Source/Tests/test_lifecycle.py": "d6d5a0d9e8831675679d89a20959943f07fcb06e6afc027af338bee3e43f94e5",
+    "Source/Tests/test_patrol.py": "65c085a5f59ca27746ca3937bb994d499325814da2fd9541f0efdb69195d65b1",
+    "Source/Tests/test_release.ps1": "6782bf0dfcc38bd71a724662badc973da0bb6cacd20526f1b23a451eef11c194",
+    "Source/Tests/test_runtime.ps1": "75e2e357ace84898ee830866e15c91b9567cad43d3877e61eb80a169412c7190",
+    "Source/Tools/build_release.py": "d8b9a53a0051de3531d47d633ec191f2f2a999929e967d148ee89a829b746176",
+    "Source/Tools/check_game.py": "3bdd691b5540379d2495986658ceea7d9e4e0b3366aed79fb70f749c56b4b3e1",
+    "Source/Tools/make_profiles.py": "77bf4b485e43a303c7b5eabcfe2887faa7d0e99af1a21732310155f5963b3398"
+  }
+}

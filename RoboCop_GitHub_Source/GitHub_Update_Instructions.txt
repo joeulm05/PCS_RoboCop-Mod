@@ -1,0 +1,48 @@
+RoboCop v1.0.1 — GitHub and Nexus update
+Author: Joe "Gambit" Bradford
+
+GITHUB — UPDATE YOUR EXISTING REPOSITORY
+1. Extract RoboCop_GitHub_Source_v1.0.1.zip.
+2. Open the RoboCop_GitHub_Source folder. You should see Install_RoboCop.bat,
+   Installer, Payload, Source, README.md and this instruction file.
+3. Open your existing RoboCop repository on GitHub at its main file listing.
+4. Click Add file > Upload files.
+5. Drag the CONTENTS of RoboCop_GitHub_Source into the upload area, preserving
+   the folders. Upload the extracted files, not the ZIP or its outer folder.
+   Include .github and .gitignore if they are visible in File Explorer.
+6. Use this commit message: RoboCop v1.0.1 - repair hotfix compatibility
+7. Commit the changes, or follow the branch/pull-request prompt if your repository
+   protects its main branch.
+8. Confirm the main file listing shows the updated v1.0.1 README. Open
+   Source/Native/robocop.c and verify its title says v1.0.1.
+
+The same file paths replace the old source. build_manifest.h now contains only
+the release version; the old executable build lock has been removed. The compiled
+helper's new source is in robocop.c, gameplay.h, compatibility.h and profiles.h.
+Do not add the game EXE, saves, player logs, UE4SS binaries or large asset packages
+to the repository's code listing.
+
+OPTIONAL GITHUB RELEASE
+After the in-game check passes, create a GitHub Release tagged v1.0.1 from the
+updated commit. Use CHANGELOG.md as the release description and attach the same
+RoboCop_Nexus_v1.0.1.zip used for Nexus as the player download. The ZIP belongs in
+Release assets, not in the repository's code listing.
+
+NEXUS
+After confirming installation and one in-game patrol, upload
+RoboCop_Nexus_v1.0.1.zip as a new version on the EXISTING RoboCop mod page.
+Use version 1.0.1 and copy the relevant entry from CHANGELOG.md. Keep the repository
+link on the mod page current. If staff request source, send the link to the v1.0.1
+commit or tag so it corresponds to this exact download.
+
+A GitHub commit does not update the Nexus download automatically. New uploads
+still undergo Nexus security checks. This release does not add a mod auto-updater.
+
+PLAYER CHECK BEFORE PUBLICATION
+Install with the game closed. Confirm Alex's model and portraits, maximum stats,
+$100 wage and 1,000% dispatch display. Send a patrol with Alex and verify roughly
+30 seconds of unpaused gameplay, then save/reload and confirm perks remain active.
+The native callback tests cover death blocking; no real game test was run here.
+
+GitHub's upload instructions:
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
