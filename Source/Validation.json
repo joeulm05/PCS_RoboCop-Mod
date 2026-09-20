@@ -1,0 +1,18 @@
+{
+  "installer": "1.0.0-RC4",
+  "host": "Linux, PowerShell 7.4.13",
+  "automatedInstallerScenarios": 16,
+  "sourceReparseRegression": "passed: old guard rejection reproduced on a linked Desktop fixture; content-only installation passed; unlisted files not copied",
+  "discoveryFixtures": "passed",
+  "runtimeUpdaterFixtures": "passed: latest basic selection, download, whitelist extraction, bundled reuse, integrity/URL rejection, explicit offline fallback",
+  "liveOfficialUpdate": "passed: official API, latest experimental archive download, published digest, extracted DLL hash",
+  "bundledExperimental": "3.0.1-1136-g35d1795d",
+  "experimentalCheckedAt": "2026-09-20",
+  "fullPayloadInstallAndHashes": "passed: fresh installation, matching runtime retained on RoboCop reinstall, outdated runtime upgraded, settings/other mods/load list preserved",
+  "gameplayPayload": "unchanged from RC3; v0.4.3",
+  "nativeHelper": "unchanged from RC3",
+  "WindowsPowerShell51DoubleClick": "pending",
+  "actualOneDriveCloudHydration": "pending",
+  "newExperimentalInGameLaunch": "pending",
+  "WindowsGitHubWorkflow": "included in source; not run"
+}

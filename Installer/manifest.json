@@ -1,0 +1,76 @@
+{
+  "installerVersion": "1.0.0-RC4",
+  "gameExe": "PoliceChiefSimulator-Win64-Shipping.exe",
+  "gameSha256": "79a3491859988358207d8024bc10828eb691b885f63d8c7078ce8d45161ecae5",
+  "ue4ssVersion": "3.0.1-1136-g35d1795d",
+  "ue4ssSource": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1136-g35d1795d.zip",
+  "ue4ssArchiveSha256": "050948bdf6b4aae2ff8d834aaebadbf7535d4cb8478fbb579966a5ca3142f86a",
+  "files": [
+    {
+      "path": "Payload/Paks/RoboCop_Worker02_P.pak",
+      "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+      "size": 347
+    },
+    {
+      "path": "Payload/Paks/RoboCop_Worker02_P.ucas",
+      "sha256": "cfb807f664cb41ffeed40c7537f24104312cca0575ee4f58b697c142d38490d2",
+      "size": 493194383
+    },
+    {
+      "path": "Payload/Paks/RoboCop_Worker02_P.utoc",
+      "sha256": "d83c10daa02c2bb3fb92fac63c2b71408e73dad5173d6d79ba77911154e101d8",
+      "size": 106108
+    },
+    {
+      "path": "Payload/Paks/zz_RoboCop_Portrait_P.pak",
+      "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+      "size": 347
+    },
+    {
+      "path": "Payload/Paks/zz_RoboCop_Portrait_P.ucas",
+      "sha256": "9955cca3c8cbc275015f0b92981cc39cd1eb05ad22b60e4f2a46731f6c23d8c9",
+      "size": 481209
+    },
+    {
+      "path": "Payload/Paks/zz_RoboCop_Portrait_P.utoc",
+      "sha256": "f7430078ec69dd09eaa496e6c68b6a9b24b4d53d912537f7bc7843b1b5120a44",
+      "size": 695
+    },
+    {
+      "path": "Payload/RoboCopGameplay/Scripts/main.lua",
+      "sha256": "c4d66198707e9b7d12a0d1ae073bf30c81a285c8080452d2c35d3e0aa9f18ee3",
+      "size": 6696
+    },
+    {
+      "path": "Payload/RoboCopGameplay/enabled.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "Payload/RoboCopGameplay/robocop_native.dll",
+      "sha256": "76de630deba8ca5727e6ba1d41b42866273a688482525586246a96bbf2fc587d",
+      "size": 190464
+    },
+    {
+      "path": "Runtime/dwmapi.dll",
+      "sha256": "2bd8edd80335c4cc1a64186b8ac9fb5764e0ff58669584b6c04131fc9f5e3842",
+      "size": 279552
+    },
+    {
+      "path": "Runtime/ue4ss/LICENSE",
+      "sha256": "99e1d8f8b7cb68e8b2313380ae3b0c8115e39dfbc443fcf21fd67ab74ce1d57e",
+      "size": 1085
+    },
+    {
+      "path": "Runtime/ue4ss/UE4SS-settings.ini",
+      "sha256": "58614ee7b13464c1f5ae0804a35682443c9c3bdc570fe54940e899ae6139b695",
+      "size": 9423
+    },
+    {
+      "path": "Runtime/ue4ss/UE4SS.dll",
+      "sha256": "d936fd2d66ae9287f0b32aec5f698aa81ff20ef744eac43bf62d8475469393df",
+      "size": 20567040
+    }
+  ],
+  "ue4ssCheckedAt": "2026-09-20"
+}
